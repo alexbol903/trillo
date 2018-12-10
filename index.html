@@ -22,8 +22,17 @@
 					<input
 						type="text"
 						class="search__input"
-						placeholder="Search hotels"
-					/>
+            placeholder="Search hotels"
+            list="results"
+          />
+          <datalist id="results">
+              <option value="Hilton Hotel and Resorts" />
+              <option value="Hyatt Hotel Corporation" />
+              <option value="Starwood Hotels" />
+              <option value="Marriott" />
+              <option value="InterContinental Hotels" />
+              <option value="Wyndham" />
+              </datalist>
 					<button class="search__button">
 						<svg class="search__icon">
 							<use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
@@ -38,12 +47,31 @@
 						</svg>
 						<span class="user-nav__notification">7</span>
 					</div>
-
 					<div class="user-nav__icon-box">
 						<svg class="user-nav__icon">
 							<use xlink:href="img/sprite.svg#icon-chat"></use>
 						</svg>
 						<span class="user-nav__notification">13</span>
+						<ul class="user-nav__user-menu drop-down__menu">
+							<li class="drop-down__menu-item">
+								<svg class="user-nav__icon">
+									<use xlink:href="img/sprite.svg#icon-facebook2"></use>
+								</svg>
+								<span class="user-nav__notification">8</span>
+							</li>
+							<li class="drop-down__menu-item">
+								<svg class="user-nav__icon">
+									<use xlink:href="img/sprite.svg#icon-google-plus2"></use>
+								</svg>
+								<span class="user-nav__notification">3</span>
+							</li>
+							<li class="drop-down__menu-item">
+								<svg class="user-nav__icon">
+									<use xlink:href="img/sprite.svg#icon-telegram"></use>
+								</svg>
+								<span class="user-nav__notification">2</span>
+							</li>
+						</ul>
 					</div>
 					<div class="user-nav__user">
 						<img
@@ -52,6 +80,12 @@
 							class="user-nav__user-photo"
 						/>
 						<span class="user-nav__user-name">Jonas</span>
+
+						<ul class="user-nav__user-menu drop-down__menu">
+							<li class="drop-down__menu-item">Profil</li>
+							<li class="drop-down__menu-item">Settings</li>
+							<li class="drop-down__menu-item">Log out</li>
+						</ul>
 					</div>
 				</nav>
 			</header>
@@ -117,7 +151,8 @@
 								alt="Photo of hotel 3"
 								class="gallery__photo"
 							/>
-						</figure>
+            </figure>
+          
 					</div>
 
 					<div class="overview">
@@ -252,9 +287,9 @@
 							Good news! We have 4 free rooms for your selected dates!
 						</h2>
 						<button class="btn">
-              <span class="btn__visible">Book now</span>
-              <span class="btn__invisible">Only 4 rooms left</span>
-            </button>
+							<span class="btn__visible">Book now</span>
+							<span class="btn__invisible">Only 4 rooms left</span>
+						</button>
 					</div>
 				</main>
 			</div>
